@@ -7,6 +7,7 @@ const ChatApp: React.FC = () => {
 
   const openai = new OpenAI({
     apiKey: 'YOUR_API_KEY_HERE',  // Replace with the provided API key
+    dangerouslyAllowBrowser:true
   });
 
   const handleSend = async () => {
